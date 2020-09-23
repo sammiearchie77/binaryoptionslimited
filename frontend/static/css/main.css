@@ -1,17 +1,115 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Lato;
-    letter-spacing: 2px;
+    letter-spacing: .2px;
+}
+
+.text-center {
+    padding: 10px;
 }
 
 /* content body  */
 .middle-text-img {
     position: relative;
-    left: 40px;
-    margin-bottom: 20px;
+    left: 622px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.middle-text > h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+}
+
+.middle-text > p {
+    font-family: Lato;
+    color: #585e68;
+}
+
+span {
+    text-align: center;
+}
+
+.svg {
+    position: relative;
+    left: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.svg-b {
+    position: relative;
+    left: 160px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.row-text {
+    font-family: Lato;
+    color: #585e68;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: .2px;
+}
+
+/* third content  */
+
+.third-content {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content-button {
+    position: relative;
+    left: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.btn-learn {
+    border-radius: 25px;
+    padding: 10px 40px;
+    border-color: #ffb506;
+    font-size: 15px;
+}
+
+.btn-learn:hover {
+    background-color: #fff;
+    border: 2px solid #ffb506;
+    color: #ffb506;
+}
+
+.btn-reg {
+    border-radius: 25px;
+    padding: 10px 40px;
+    background-color: #00002A;
+    color: #fff;
+    font-size: 15px;
+}
+
+.btn-reg:hover {
+    background-color: #fff;
+    border: 2px solid #00002A;
+    color: #00002A;
+}
+
+/* forth-section  */
+.forth-section {
+    background-image: url('../img/pexels-karolina-grabowska-4386375.jpg');
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.forth-img {
+    position: relative;
+    left: 150px;
+}
+
+.forth-section-msg {
+    position: relative;
+    right: 100px;
 }
