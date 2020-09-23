@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Lato;
+    letter-spacing: 2px;
+}
+
+/* content body  */
+.middle-text-img {
+    position: relative;
+    left: 40px;
+    margin-bottom: 20px;
+}
