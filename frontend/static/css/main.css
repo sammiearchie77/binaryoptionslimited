@@ -7,6 +7,13 @@ body {
     letter-spacing: .2px;
 }
 
+
+h2 {
+    font-family: "exo 2";
+    letter-spacing: .2px;
+    font-weight: 700;
+    font-size: 40px;
+}
 .text-center {
     padding: 10px;
 }
@@ -55,6 +62,15 @@ span {
     font-size: 15px;
     letter-spacing: .2px;
 }
+/* first content  */
+.second-content-bg {
+    background-image: url('../img/city2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
 
 /* third content  */
 
@@ -68,6 +84,11 @@ span {
     left: 10px;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.btn-learn, .btn-reg {
+    position: relative;
+    left: 75px;
 }
 
 .btn-learn {
@@ -112,4 +133,72 @@ span {
 .forth-section-msg {
     position: relative;
     right: 100px;
+}
+
+.forth-section-bg {
+    background-image: url('../img/city1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+}
+
+/* fifth content  */
+.fifth-content {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fifth-content-header {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #333;
+}
+.fifth-content-svg {
+    position: relative;
+    left: 628px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* sixth-content  */
+.sixth-content-bg {
+    background-image: url('../img/trading.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.sixth-content-widget {
+    position: relative;
+    left: 100px;
+    bottom: 70px;
+}
+
+/* seventh-content */
+.seventh-content-svg {
+    position: relative;
+    left: 628px;
+    margin-top: 30px;
+    margin-top: 30px;
+}
+
+.seventh-content-header {
+    position: relative;
+    left: 500px;
+    margin-top: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.seventh-content-widget {
+    position: relative;
+    left: 90px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
