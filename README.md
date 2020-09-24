@@ -1,2 +1,2 @@
 # binaryoptionslimited
-A Crypto web application
+A Crypto trading web application
