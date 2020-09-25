@@ -19,6 +19,15 @@ h2 {
     padding: 10px;
 }
 
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    font-size: 30px;
+    text-shadow: 2px 4px rgba(255, 255, 255, .25);
+}
+
 /* content body  */
 .middle-text-img,.fifth-content-svg, .seventh-content-svg {
    margin-left: 690px;
@@ -203,4 +212,32 @@ h2.seventh-content-header.text-center {
     background-image: url('../img/footer.jpg');
     min-height: 300px;
     margin-top: 30px;
+}
+
+/* + registration page styling +  */
+.bg-image {
+    background-image: url('../img/pexels-david-mcbee-730547.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+}
+
+.bg-image-header {
+    position: absolute;
+    margin-top: 85px;
+    margin-left: 264px;
+    text-shadow: 4px 4px rgba(255, 255, 255, 0.905);
+}
+
+/* + form section styling +  */
+
+.form-row {
+    background: rgb(58,105,180);
+    background: radial-gradient(circle, rgba(58,105,180,1) 27%, rgba(253,29,29,1) 74%, rgba(255,223,8,1) 88%);
+}
+.form-bg-image {
+    background: rgb(3,5,5);
+    background: radial-gradient(circle, rgba(3,5,5,1) 41%, rgba(9,107,171,0.5662640056022409) 70%);
 }
