@@ -5,6 +5,7 @@
 body {
     font-family: Lato;
     letter-spacing: .2px;
+;
 }
 
 
@@ -19,9 +20,8 @@ h2 {
 }
 
 /* content body  */
-.middle-text-img {
-    position: relative;
-    left: 622px;
+.middle-text-img,.fifth-content-svg, .seventh-content-svg {
+   margin-left: 690px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -42,15 +42,7 @@ span {
 }
 
 .svg {
-    position: relative;
-    left: 150px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.svg-b {
-    position: relative;
-    left: 160px;
+    margin-left: 180px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
@@ -72,6 +64,10 @@ span {
     background-attachment: fixed;
 }
 
+.second-content-msg {
+    margin-bottom: 100px;
+}
+
 /* third content  */
 
 .third-content {
@@ -80,15 +76,9 @@ span {
 }
 
 .content-button {
-    position: relative;
-    left: 10px;
+    margin-left: 86px;
     margin-top: 50px;
     margin-bottom: 50px;
-}
-
-.btn-learn, .btn-reg {
-    position: relative;
-    left: 75px;
 }
 
 .btn-learn {
@@ -123,16 +113,24 @@ span {
     background-image: url('../img/pexels-karolina-grabowska-4386375.jpg');
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
 }
 
 .forth-img {
+   margin-left: 100px;
+}
+
+.forth-section-header {
     position: relative;
-    left: 150px;
+    top: 20px;
+    margin-left: 511px;
 }
 
 .forth-section-msg {
     position: relative;
-    right: 100px;
+    margin-right: 92px;
+    margin-top: 40px;
+    font-size: 25px;
 }
 
 .forth-section-bg {
@@ -142,6 +140,7 @@ span {
     background-size: cover;
     min-height: 500px;
     background-attachment: fixed;
+    width: 100%;
 }
 
 /* fifth content  */
@@ -155,13 +154,11 @@ span {
     font-size: 40px;
     color: #333;
 }
-.fifth-content-svg {
-    position: relative;
-    left: 628px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
+.fifth-content-msg {
+    font-weight: 500;
+    font-size: 20px;
+}
 /* sixth-content  */
 .sixth-content-bg {
     background-image: url('../img/trading.jpg');
@@ -175,30 +172,37 @@ span {
 }
 
 .sixth-content-widget {
-    position: relative;
-    left: 100px;
-    bottom: 70px;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: -65px;
 }
 
-/* seventh-content */
-.seventh-content-svg {
-    position: relative;
-    left: 628px;
-    margin-top: 30px;
-    margin-top: 30px;
-}
-
-.seventh-content-header {
-    position: relative;
-    left: 500px;
-    margin-top: 30px;
-    margin-top: 30px;
-    justify-content: center;
+h2.seventh-content-header.text-center {
+    margin-top: -20px;
 }
 
 .seventh-content-widget {
-    position: relative;
-    left: 90px;
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+/* google map section  */
+#google-map-content {
+    height: 500px;
+    background-color: #808080;
+}
+
+/* ninth-content-section */
+.ninth-content {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+/* footer-content  */
+.footer-content {
+    margin-top: 30px;
+    background-image: url('../img/footer.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
