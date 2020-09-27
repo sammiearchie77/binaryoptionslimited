@@ -15,6 +15,14 @@ h2 {
     font-weight: 700;
     font-size: 40px;
 }
+
+h3 {
+    font-family: "exo 2";
+    color: #282835;
+    letter-spacing: .2px;
+    font-weight: 700;
+}
+
 .text-center {
     padding: 10px;
 }
@@ -294,12 +302,18 @@ h2.seventh-content-header.text-center {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
     z-index: -2;
 }
 
 .middle-content-p {
     font-weight: 900;
+}
+
+.third-content-heading {
+    font-weight: 900;
+    position: relative;
+    top: 60px;
 }
 
 .about-third-content-bg {
@@ -308,15 +322,20 @@ h2.seventh-content-header.text-center {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 400px;
+    height: 500px;
 
 }
 
 .about-third-content-btn {
     border-radius: 25px;
-    padding: 10px 40px;
+    padding: 20px 35px;
     border-color: #ffb506;
     font-size: 15px;
+    margin-left: 600px;
+    margin-top: 90px;
+    position: relative;
+    top: 50px;
+    font-size: 20px;
 
 }
 
@@ -324,4 +343,49 @@ h2.seventh-content-header.text-center {
     background-color: #fff;
     border: 2px solid #ffb506;
     color: #ffb506;
+}
+
+.global {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.global-heading {
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 0;
+    line-height: 34px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.global-section {
+    float: left;
+    width: 99%;
+    line-height: 80px;
+    border: 1px solid rgba(0,0,0,.2);
+    padding: 0 30px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+/* about .fifth-content section  */
+.about-fifth-content {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 400px;
+}
+
+.about-fifth-content-heading {
+    position: relative;
+    top: 40px;
+    font-family: 'Lato';
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.about-support {
+    background-color: #00002A;
 }
