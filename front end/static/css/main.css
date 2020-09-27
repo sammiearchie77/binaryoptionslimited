@@ -388,4 +388,6 @@ h2.seventh-content-header.text-center {
 
 .about-support {
     background-color: #00002A;
+    position: relative;
+    top: 60px;
 }
