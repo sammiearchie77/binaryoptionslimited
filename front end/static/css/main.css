@@ -5,7 +5,6 @@
 body {
     font-family: 'Lato';
     letter-spacing: .2px;
-    background-color: #ffb506;
     width: 100%;
 }
 
@@ -268,5 +267,61 @@ h2.seventh-content-header.text-center {
 .reg-footer {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #ffb506;
+    background-color: #bfbfbf;
+}
+
+/* about section  */
+.about-bg {
+    background-image: url('../img/about-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 350px;
+}
+
+.about-section-image {
+    background-image: url('../img/about-section.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 700px;
+    border-radius: 10px;
+}
+
+.middle-content-bg {
+    background-image: url('../img/parallax1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+    z-index: -2;
+}
+
+.middle-content-p {
+    font-weight: 900;
+}
+
+.about-third-content-bg {
+    background-image:url('../img/parallax6.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 400px;
+
+}
+
+.about-third-content-btn {
+    border-radius: 25px;
+    padding: 10px 40px;
+    border-color: #ffb506;
+    font-size: 15px;
+
+}
+
+.about-third-content-btn:hover {
+    background-color: #fff;
+    border: 2px solid #ffb506;
+    color: #ffb506;
 }
