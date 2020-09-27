@@ -11,17 +11,128 @@
     <!-- style sheet  -->
     <link rel="stylesheet" href="static/css/main.css">
 </head>
-<body>
+<body class="contact-body">
+        <!-- live chat div  -->
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright">
+                <a href="https://www.tradingview.com" rel="noopener" target="_blank"></a> 
+            </div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+            {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "Nasdaq 100"
+              },
+              {
+                "proName": "FX_IDC:EURUSD",
+                "title": "EUR/USD"
+              },
+              {
+                "proName": "BITSTAMP:BTCUSD",
+                "title": "BTC/USD"
+              },
+              {
+                "proName": "BITSTAMP:ETHUSD",
+                "title": "ETH/USD"
+              }
+            ],
+            "colorTheme": "dark",
+            "isTransparent": false,
+            "displayMode": "adaptive",
+            "locale": "en"
+          }
+            </script>
+          </div>
     
+          <!-- navigation section BEGIN  -->
+          <nav class="bg-dark">
+            <ul class="nav justify-content-end mx-lg-5 p-2">
+                <li class="nav-item">
+                  <a class="nav-link active text-light" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Trade data</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link text-light" href="#">Contact us</a>
+                </li>
+              </ul>
+        </nav>
+        <!-- navigation section END  -->
+        <div class="col-lg contact-head"></div>
 
+        <div class="container">
+            <h2 class="text-center text-uppercase text-light contact-heading">support form</h2>
+        </div>
 
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <div class="col-lg-11 border border-light bg-dark">
+            <div class="row justify-content-end">
+                <div class="col-lg-8">
+                    <p class="text-white contact-text">Do you have any questions? We strongly recommend that you start searching for the necessary information in the FAQ section.
+                        If you need advice or technical assistance, do not hesitate to contact our specialists via support form or e-mail</p>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 form-form">
+                    <form action="" method="post">
+                        <div class="form-group row">
+                            <label for="inputName1" class="col-lg-2 col-form-label text-white text-uppercase">Your Name</label>
+                            <div class="col-lg-10">
+                              <input type="name" class="form-control" id="inputName1">
+                            </div>
+                          </div>
+                        <div class="form-group row">
+                            <label for="inputEmail3" class="col-lg-2 col-form-label text-light text-uppercase">Email</label>
+                            <div class="col-lg-10">
+                              <input type="email" class="form-control" id="inputEmail3">
+                        </div>
+                          </div>
+                          <div class="form-group row">
+                            <label for="exampleFormControlMessage1" class="col-lg-2 col-form-lable text-light">Message</label>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                            </div>    
+                          </div>               
+                    </form>
+                    <div class="col">
+                        <button type="submit" class="btn btn-light float-right contact-button">Send</button>
+                    </div>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <div></div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11 bg-dark border border-light">
+            <div class="row">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4">
+                    <h4 class="text-center text-warning text-uppercase">E-Mail: admin@tradeluxon.com</h4>
+                    <h4 class="text-center text-warning text-uppercase">@tradeluxon.com</h4>
+                </div>
+                <div class="col-lg-4"></div>
+            </div>
+        </div>
+        <div class="col-lg-1"></div>
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 </html>
