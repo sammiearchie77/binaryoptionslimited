@@ -421,3 +421,12 @@ h2.seventh-content-header.text-center {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+.empty-section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tradingview-widget-container {
+    height: 500px;
+}
