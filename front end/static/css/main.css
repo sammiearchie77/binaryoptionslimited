@@ -37,6 +37,10 @@ h3 {
 }
 
 /* content body  */
+.middle-text {
+    margin-bottom: 30px;
+}
+
 .middle-text-img,.fifth-content-svg, .seventh-content-svg {
    margin-left: 690px;
     margin-top: 30px;
@@ -52,6 +56,7 @@ h3 {
 .middle-text > p {
     font-family: Lato;
     color: #585e68;
+    padding: 0;
 }
 
 span {
@@ -81,6 +86,10 @@ span {
     background-attachment: fixed;
 }
 
+.second-content-heading {
+    position: relative;
+    top: 111px;
+}
 .second-content-msg {
     margin-bottom: 100px;
 }
