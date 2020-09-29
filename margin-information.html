@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>company-information</title>
+    <title>margin-information</title>
     <!-- boostrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -31,11 +31,101 @@
                 </ul>
             </nav>
             <!-- navigation section END  -->
-            <div class="company-content">
-              <h2>COMPANY INFORMATION</h2>
+            <div class="margin-content">
+              <h2>MARGIN INFORMATION</h2>
               <br>
-              <h3>Company info</h3>
-                <p><b>1. The Company’s registered office is at BINARY OPTIONS LIMITED</b></p>
+              <p>
+
+
+            </p>
+            <p>Margin is calculated based on the leverage used and is the amount of equity needed to open and maintain a position.</p>
+            <p>Formula: Margin = (Contract size*Lot Value) / Leverage.
+
+                Assuming that your trading account has a leverage ratio of 1:100 and you wish to buy 1 Lot (fixed at 100,000) of EUR/USD, leverage gives you the ability to pay 1/100 of the invested amount (this will be the margin used for this single position).
+                
+                1 Lot EUR/USD = 100,000 EUR against USD
+                
+                If the EUR/USD opening price was 1.12 the Trade value will be (100,000 * 1.12) or 112,000 USD.
+                
+                    The margin for the above-mentioned position is (112,000/100) 1,120 USD.</p>
+            <p><b>Free Margin</b></p>
+            <p>The free margin appears at the bottom of the platform and represents the difference between the trading account’s equity and the open positions margin.
+
+                Free margin = Equity – Margin</p>
+            <p><b>Margin Level</b></p>
+            <p>A percentage value based on the amount of usable margin and equity. If the margin level is less than 100% thriveoptions may freeze opening new orders. If the margin level is lower than the margin call level (at 100% of the margin level) the trader is advised to deposit more funds. thriveoptions may automatically close open orders and prevent further trading when the margin level falls below the stop out level.
+
+            </p>
+            <p><b>Formula:</b> Margin Level = (Equity/Margin) * 100</p>
+            <p><b>Margin call</b> occurs when the trader’s equity as a percentage falls below the margin requirement..</p>
+            <p>It should be noted that thriveoptions does not bear an obligation to provide a Margin Call to any trader. Nevertheless, traders are advised to maintain a margin level above 100%.
+
+                Stop Out level is between 20% – 100% of the Margin Level. When the Stop Out level is reached, the system will start closing your positions automatically, without prior notice.
+                                            </p>
+            <p><b>Example 1</b></p>
+            <p>A client deposits 10,000 USD and sets the maximum leverage to 1:100. The trader may open positions of up to (10,000 * 100) 1,000,000 USD which is equal to 10 Lots.
+
+                Assume stop out is at 10%
+                
+                The client opens a BUY position of 5 LOT EUR/USD at 1.12.
+                
+                Volume of the particular position will be (500,000 EUR * 1.12) = 560,000 USD.
+                
+                Margin will be (560,000/100) 5600 USD.
+                
+                Free Margin will be (10,000 – 5,600) 4,400 USD
+                
+                    Margin Level will be [(10,000/5600) *100] =178.57%</p>
+            <p><b>Profit-making Scenario:</b></p>
+            <p>If the EUR/USD rate rises to 1.135, the trader will make a gain of [(500,000 EUR * 1.135) -560,000 USD] = 7,500 USD.
+
+                Free Margin will rise to (17,500 – 5,600) = 11,900 assuming the position was not closed yet.
+                
+                    Margin level will rise to [(17,500/5600)*100] =312.5%</p>
+            <p><b>Loss Making Scenario:</b></p>
+            <p>If the EUR/USD rate falls to 1.105, the trader will make a loss of [560,000 USD – (500,000 EUR * 1.105)] =-7,500 USD.
+
+                Free Margin will fall to (2,500 – 5,600) = -3100 assuming the position was not closed yet.
+                
+                Margin level will fall to [(2500/5600)*100] = 44.6%
+                
+                Since the margin level is below 100%, trader could not open new positions
+                
+                If the EUR/USD continues to fall and reaches 1.101, the trader will make a loss of [560,000 USD – (500,000 EUR * 1.101)] =- 9500 USD.
+                
+                Margin Level will fall to [500/5600 * 100] = 8.9%. Since the Margin Level is now below the stop out level of 10%,the trade will automatically be closed by the system.</p>
+            <p><b>Example 2</b></p>
+            <p>Client deposits 10,000 USD and sets the maximum leverage to 1:300. So the trader could open positions of up to (10,000 * 300) 3,000,000 USD which is equal to 30 Lots.
+
+                Then opens a BUY position of 20 LOT EUR/USD at 1.12.
+                
+                Volume of the particular position will be (2,000,000 EUR * 1.12) = 2,240,000 USD.
+                
+                Margin will be (2,240,000/300) = 7,467 USD.
+                
+                Free Margin will be (10,000 – 7,467) = 2,533 USD
+                
+                    Margin Level will be [(10,000/7,467)*100] =133.92%</p>
+            <p><b>Profit-making Scenario:</b></p>
+            <p>If the EUR/USD rate rises to 1.135, the trader will make a gain of [(2,000,000 EUR * 1.135) -2,240,000 USD] =30,000 USD.
+
+                Free Margin will rise to (40,000 – 7,467) =32,533 assuming the position was not closed yet.
+                
+                    Margin level will rise to [(40,000/7,467)*100] =536.69%</p>
+            <p><b>Loss Making Scenario:</b></p>
+            <p>If the EUR/USD rate falls to 1.11625, the trader will make a loss of [2,240,000 USD – (2,000,000 EUR * 1.11625)] =- 7,500 USD.
+
+                Free Margin will fall to (2,500 – 5,600) = -3100 assuming the position was not closed yet.
+                
+                Margin level will fall to [(2500/7,467)*100] = 33.48%
+                
+                Since the margin level is below 100%, trader could not open new positions
+                
+                If the EUR/USD continues to fall and reach 1.1155, the trader will have a loss of [2,240,000 USD – (2,000,000 EUR * 1.11525)] = 9500 USD.
+                
+                Margin Level will fall to [500/7,467 * 100] =6.69%. Since the Margin Level is now below the stop out level of 10% the trade will automatically be closed by the system</p>
+             <a href="#" class="btn btn-alt">Read More</a>
+            
              
             </div>
             <section class="middle-text">
