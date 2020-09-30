@@ -305,6 +305,7 @@ h2.seventh-content-header.text-center {
     border-radius: 10px;
 }
 
+/* middle content styling  */
 .middle-content-bg {
     background-image: url('../img/parallax1.jpg');
     background-position: center;
@@ -315,10 +316,16 @@ h2.seventh-content-header.text-center {
     z-index: -2;
 }
 
+.middle-content-text {
+    position: relative;
+    top: 50px;
+}
+
 .middle-content-p {
     font-weight: 900;
 }
 
+/* third content styling  */
 .third-content-heading {
     font-weight: 900;
     position: relative;
