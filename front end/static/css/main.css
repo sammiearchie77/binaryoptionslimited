@@ -115,8 +115,8 @@ span {
 }
 
 .btn-learn:hover {
-    background-color: #fff;
-    border: 2px solid #ffb506;
+    background-color: transparent;
+    border: 3px solid #ffb506;
     color: #ffb506;
 }
 
@@ -129,8 +129,8 @@ span {
 }
 
 .btn-reg:hover {
-    background-color: #fff;
-    border: 2px solid #00002A;
+    background-color: transparent;
+    border: 3px solid #00002A;
     color: #00002A;
 }
 
@@ -349,8 +349,8 @@ h2.seventh-content-header.text-center {
 }
 
 .about-third-content-btn:hover {
-    background-color: #fff;
-    border: 2px solid #ffb506;
+    background-color: transparent;
+    border: 3px solid #ffb506;
     color: #ffb506;
 }
 
@@ -438,4 +438,63 @@ h2.seventh-content-header.text-center {
 
 .tradingview-widget-container {
     height: 500px;
+}
+
+
+/* footer styling section  */
+.footer-msg {
+    position: relative;
+    top: 75px;
+}
+
+.footer-links-content {
+    position: relative;
+    top: 52px;
+}
+
+.footer-link {
+    position: relative;
+    top: 80px;
+}
+
+.subscribe-div {
+    position: relative;
+    top: 40px;
+}
+
+.subscribe-msg {
+    margin-left: 40px;
+    position: relative;
+    bottom: 10px;
+    font-size: 19px;
+}
+
+.subscribe-input-div {
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.subscribe-input {
+    height: 51px;
+    border-radius: 30px;
+}
+
+.footer-btn {
+    margin-left: 22px;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 30px;
+    width: 195px;
+}
+
+.footer-btn:hover {
+    background-color: transparent;
+    color: #ffb506;
+    border: 3px solid #ffb506;
+}
+
+/* margin information  file*/
+.margin-content, .term-content, .privacy-content {
+    padding: 0px 80px;
+    color: #808080;
 }
