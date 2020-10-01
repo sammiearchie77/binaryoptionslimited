@@ -29,11 +29,16 @@ h3 {
 
 .nav-link {
     font-size: 20px;
+    cursor: pointer;
 }
 
 .nav-link:hover {
-    font-size: 30px;
+    font-size: 25px;
     text-shadow: 2px 4px rgba(255, 255, 255, .25);
+}
+
+a {
+    text-decoration-line: none;
 }
 
 /* content body  */
@@ -249,21 +254,22 @@ h2.seventh-content-header.text-center {
     text-shadow: 4px 4px rgba(255, 255, 255, 0.905);
 }
 
-/* + form section styling +  */
+/* + form section styling for registration page +  */
 
 .form-form {
     position: relative;
     margin-top: 40px;
     color: #fff !important;
-    backdrop-filter: blur(20px);
     margin-bottom: 40px;
 }
 .form-row {
-  background-image: url('../img/pexels-valdemaras-d-1687678.jpg');
-  background-position: center;
+  background-image: url('../img/pexels-crypto-crow-1447418.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   width: 100%;
+  box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
+
 }
 
 /* + login section styling + */
@@ -275,6 +281,7 @@ h2.seventh-content-header.text-center {
     backdrop-filter: blur(10px);
     height: 600px;
     width: 100%;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 .login-form {
@@ -284,7 +291,7 @@ h2.seventh-content-header.text-center {
 .reg-footer {
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #bfbfbf;
+    /* background-color: #bfbfbf; */
 }
 
 /* about section  */
@@ -295,6 +302,7 @@ h2.seventh-content-header.text-center {
     background-size: cover;
     background-attachment: fixed;
     height: 350px;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 .about-section-image {
@@ -314,6 +322,7 @@ h2.seventh-content-header.text-center {
     background-attachment: fixed;
     height: 500px;
     z-index: -2;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 .middle-content-text {
@@ -504,4 +513,10 @@ h2.seventh-content-header.text-center {
 .margin-content, .term-content, .privacy-content {
     padding: 0px 80px;
     color: #808080;
+}
+
+/* company information  */
+.company-content {
+    margin-left: 80px;
+    margin-top: 60px;
 }
