@@ -348,6 +348,7 @@ h2.seventh-content-header.text-center {
     background-size: cover;
     background-attachment: fixed;
     height: 500px;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 
 }
 
@@ -435,11 +436,28 @@ h2.seventh-content-header.text-center {
     height: 300px;
 }
 
+.contact-text {
+    font-size: 23px;
+    font-weight: 500;
+    text-shadow: 2px 2px #282835;
+    text-align: justify;
+}
+
+.col-form-label {
+    font-weight: 700;
+    text-shadow: 2px 2px #333;
+}
+
 .contact-button {
     position: relative;
     top: 20px;
     bottom: 20px;
     padding: 10px 20px;
+}
+
+.contact-button:hover {
+    background-color: transparent;
+    color: #fff;
 }
 
 .form-form {
