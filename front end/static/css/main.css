@@ -458,6 +458,7 @@ h2.seventh-content-header.text-center {
 .contact-button:hover {
     background-color: transparent;
     color: #fff;
+    border: 3px solid;
 }
 
 .form-form {
