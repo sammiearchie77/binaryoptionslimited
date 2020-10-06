@@ -37,8 +37,8 @@ h3 {
     text-shadow: 2px 4px rgba(255, 255, 255, .25);
 }
 
-a {
-    text-decoration-line: none;
+a:link {
+    text-decoration: none !important;
 }
 
 /* content body  */
@@ -46,11 +46,6 @@ a {
     margin-bottom: 30px;
 }
 
-.middle-text-img,.fifth-content-svg, .seventh-content-svg {
-   margin-left: 690px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
 
 .middle-text > h2 {
     margin-bottom: 10px;
@@ -62,6 +57,14 @@ a {
     font-family: Lato;
     color: #585e68;
     padding: 0;
+}
+
+.middle-text-img,
+.fifth-content-img,
+.seventh-content-img {
+    position: relative;
+    margin-left: 20%;
+    left: 20%;
 }
 
 span {
@@ -89,6 +92,7 @@ span {
     background-size: cover;
     min-height: 500px;
     background-attachment: fixed;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 .second-content-heading {
@@ -140,12 +144,13 @@ span {
 }
 
 /* forth-section  */
-.forth-section {
+/* .forth-section {
     background-image: url('../img/pexels-karolina-grabowska-4386375.jpg');
     margin-top: 50px;
     margin-bottom: 50px;
     width: 100%;
-}
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
+} */
 
 .forth-img {
    margin-left: 100px;
@@ -172,6 +177,7 @@ span {
     min-height: 500px;
     background-attachment: fixed;
     width: 100%;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 /* fifth content  */
@@ -200,6 +206,7 @@ span {
     background-attachment: fixed;
     margin-top: 100px;
     margin-bottom: 50px;
+    box-shadow: 0 3000px rgba(0,0,0, 0.5) inset;
 }
 
 .sixth-content-widget {
@@ -221,6 +228,7 @@ h2.seventh-content-header.text-center {
 #google-map-content {
     height: 500px;
     background-color: #808080;
+    width: 100%;
 }
 
 /* ninth-content-section */
@@ -352,6 +360,18 @@ h2.seventh-content-header.text-center {
 
 }
 
+.about-img {
+    position: relative;
+    margin-left: 34%;
+    left: 14%;
+    margin-bottom: 2%
+}
+
+.about-svg {
+    position: relative;
+    left: 39%;
+}
+
 .about-third-content-btn {
     border-radius: 25px;
     padding: 20px 35px;
@@ -388,7 +408,6 @@ h2.seventh-content-header.text-center {
 
 .global-section {
     float: left;
-    width: 99%;
     line-height: 80px;
     border: 1px solid rgba(0,0,0,.2);
     padding: 0 30px;
@@ -476,6 +495,21 @@ h2.seventh-content-header.text-center {
 }
 
 
+/* trade-data section  */
+.trade-data-text-img {
+    margin-left: 30%;
+    margin-top: 8%;
+    position: relative;
+    left: 18%;
+}
+
+.trade-data-svg {
+    margin-left: 20%;
+    position: relative;
+    left: 20%;
+}
+
+
 /* footer styling section  */
 .footer-msg {
     position: relative;
@@ -539,3 +573,6 @@ h2.seventh-content-header.text-center {
     margin-left: 80px;
     margin-top: 60px;
 }
+
+
+/* mobile mode section  */
