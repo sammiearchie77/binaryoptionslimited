@@ -64,7 +64,9 @@ a:link {
 .seventh-content-img {
     position: relative;
     margin-left: 20%;
-    left: 20%;
+    left: 27%;
+    top: 10px;
+    margin-bottom: 20px;
 }
 
 span {
@@ -576,3 +578,84 @@ h2.seventh-content-header.text-center {
 
 
 /* mobile mode section  */
+@media only screen and (max-width: 600px) {
+    /* Home page mobile styling  */
+
+
+    /* third-content  */
+    .third-content-img {
+        width: 100%;
+    }
+
+    /* forth-content-bg  */
+    .forth-section-bg {
+        width: 100%;
+    }
+
+    .forth-img {
+        display: none;
+    }
+
+    .content-button {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        flex-shrink: 1;
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 27px;
+    }
+
+    .content-button > div {
+        padding: 0 !important;
+    }
+
+    .btn-reg {
+        padding: 7px 25px;
+    }
+
+    .btn-learn {
+        padding: 7px 20px;
+    }
+
+    .middle-text-img,
+    .fifth-content-img,
+    .seventh-content-img {
+        position: relative;
+        margin-left: 18%;
+        left: 20%;
+        top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .svg {
+        margin-left: 120px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+    .second-content-bg {
+        background-attachment: scroll;
+        min-height: 233px
+    }
+    .second-content-heading {
+        font-size: 20px;
+        position: relative;
+        top: 70px;
+    }
+
+    .forth-section-bg {
+        background-attachment: scroll;
+    }
+
+    .forth-section-header {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .forth-section-msg {
+        margin-top: 40px;
+        font-size: 17px;
+        margin-right: 0;
+    }
+}
