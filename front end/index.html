@@ -6,6 +6,7 @@
     <title>binary options limited</title>
 
     <!-- boostrap -->
+    <link rel="stylesheet" href="./bootstrap-4.5.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -55,23 +56,29 @@
       </div>
 
     <!-- TradingView Widget END -->
-
+      
     <!-- navigation section BEGIN  -->
-    <nav class="bg-dark">
-        <ul class="nav justify-content-end">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link active text-light" href="./index.html">Home</a>
+            <a class="nav-link text-light" href="./index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="./about.html">About</a>
+            <a class="nav-link text-light" href="./about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="./trade-data.html">Trade data</a>
+            <a class="nav-link active text-light" href="./trade-data.html">Trade data</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link text-light" href="./contact-us.html">Contact us</a>
+            <a class="nav-link text-light" href="./contact-us.html">Contact us</a>
             </li>
-          </ul>
+        </ul>
+      </div>
     </nav>
     <!-- navigation section END  -->
 
@@ -221,8 +228,33 @@
   
   
         <!-- sixth section  -->
-    
-        <div class="sixth-content">
+
+        <!-- mobile mode version  -->
+        <div class="sixth-content d-lg-none">
+          <div class="sixth-content-bg">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container sixth-content-widget justify-content-center-mobile">
+              <div class="tradingview-widget-container__widget"></div>
+              <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/forex-screener/" rel="noopener" target="_blank"><span class="blue-text">Forex Screener</span></a> by TradingView</div>
+              <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+              {
+              "width": 340,
+              "height": 500,
+              "defaultColumn": "overview",
+              "defaultScreen": "general",
+              "market": "forex",
+              "showToolbar": true,
+              "colorTheme": "dark",
+              "locale": "en"
+            }
+              </script>
+            </div>
+        <!-- TradingView Widget END -->
+          </div>
+        </div>
+
+        <!-- sixth-content-widget-mobile  -->
+        <div class="sixth-content d-sm-none">
           <div class="sixth-content-bg">
             <!-- TradingView Widget BEGIN -->
             <div class="tradingview-widget-container sixth-content-widget justify-content-center">
@@ -246,8 +278,44 @@
         </div>
 
         <!-- seventh section  -->
-      
-        <div class="seventh-section">
+
+        <!-- sevent section mobile view  -->
+        <div class="seventh-section-mobile d-lg-none">
+          <img src="./static/img/tl-icn.png" alt="" class="seventh-content-img">
+          <h2 class="seventh-content-header text-center">
+            Forex Cross Rates Widget
+          </h2>
+          <div class="seventh-content-widget-mobile">
+             <!-- TradingView Widget BEGIN -->
+              <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Forex Rates</span></a> by TradingView</div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+                {
+                "width": 340,
+                "height": 400,
+                "currencies": [
+                  "EUR",
+                  "USD",
+                  "JPY",
+                  "GBP",
+                  "CHF",
+                  "AUD",
+                  "CAD",
+                  "NZD",
+                  "CNY"
+                ],
+                "isTransparent": false,
+                "colorTheme": "dark",
+                "locale": "en"
+              }
+                </script>
+              </div>
+              <!-- TradingView Widget END -->
+          </div>
+        </div>
+        <!-- desktop view  -->
+        <div class="seventh-section d-sm-none">
           <img src="./static/img/tl-icn.png" alt="" class="seventh-content-img">
           <h2 class="seventh-content-header text-center">
             Forex Cross Rates Widget
@@ -285,6 +353,14 @@
 
         <!-- eight content section  -->
         <!-- external-embedding-google-map  -->
+
+        <!-- mobile display mode  -->
+        <div class="eight-content-mobile d-lg-none">
+          <div id="google-map-content">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.6527874189537!2d6.260900313947911!3d4.997209640408554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106a017afe304655%3A0x68c70bfe542f22cd!2sTombia%20-%20Amassoma%20Rd%2C%20Tombia!5e0!3m2!1sen!2sng!4v1600952182354!5m2!1sen!2sng"
+            width="340" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </div>
+        </div>
       
         <div class="eight-content">
           <div id="google-map-content">
@@ -296,6 +372,32 @@
         <!-- end-of-eight-content  -->
 
         <!-- ninth-content-section  -->
+        <!-- for mobile view  -->
+        <div id="carouselExampleInterval" class="carousel slide d-lg-none" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active global-section" data-interval="1000">
+              <img src="./static/img/blockchain.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item global-section" data-interval="2000">
+              <img src="./static/img/crpto-spk.png" class="d-block" alt="..."> 
+            </div>
+            <div class="carousel-item global-section">
+              <img src="./static/img/btc-expert.png" class="d-block" alt="...">
+            </div>
+            <div class="carousel-item global-section">
+              <img src="./static/img/crpto.png" class="d-block" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- for phone view  -->
         <section class="about-fourth-content">
           <div class="row">
             <div class="col-lg-3">
@@ -399,6 +501,7 @@
         
       
     <!-- Optional JavaScript -->
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
