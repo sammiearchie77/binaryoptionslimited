@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -565,7 +567,50 @@ h2.seventh-content-header.text-center {
     color: #ffb506;
     border: 3px solid #ffb506;
 }
+/* price plan section  */
+    .price-plan-div {
+        background-color: #585e68;
+        color: #fff;
+        border-radius: 0px 15px;
+        margin-top: 50px;
+        padding: 0px;
+        height: 240px;
+        width: 80%;
+        box-shadow: 3px 6px #ffb506;
+    }
 
+    .price-plan-div:hover {
+        background-color: #282835;
+        box-shadow: 3px 6px #000;
+    }
+    .price-plan-div > h5 {
+        position: relative;
+        top: 10%;
+    }
+    
+    .price > h2 {
+        position: relative;
+        top: 5%;
+    }
+
+    .price-btn {
+        border-radius: 25px;
+        padding: 10px 40px;
+        border-color: #ffb506;
+        font-size: 15px;
+        margin-left: 26%;
+    }
+
+    .price-btn:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .price-btn:active {
+        border-radius: 25px;
+        background-color: #fff;
+        color: #282835;
+    }
 /* margin information  file*/
 .margin-content, .term-content, .privacy-content {
     padding: 0px 80px;
@@ -802,7 +847,34 @@ h2.seventh-content-header.text-center {
     .middle-content-bg {
         background-attachment: scroll;
     }
+
+    .middle-content-text {
+        font-size: 20px;
+    }
     .about-third-content-bg {
         background-attachment: scroll;
     }
+
+    .third-content-heading {
+        top: 155px;
+        font-size: 20px;
+    }
+
+    .about-third-content-btn {
+        padding: 10px 35px;
+        margin-left: 84px;
+        font-size: 13px;
+        top: 80px;
+    }
+
+    .about-fifth-content {
+        height: 470px;
+        padding: 14px;
+    }
+
+    .about-bg {
+        background-attachment: scroll;
+        width: 100%;
+    }
+    
 }
