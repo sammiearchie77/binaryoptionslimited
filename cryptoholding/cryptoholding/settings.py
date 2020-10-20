@@ -25,7 +25,7 @@ SECRET_KEY = 'rp(+9(a5_)@13vi1#0t^39qe2-dv$d!-+!i=vumc^l24##be+%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'binaryoptionlimited.com', '159.89.171.250']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'binaryoptionslimited.com', '159.89.171.250']
 
 
 # Application definition
