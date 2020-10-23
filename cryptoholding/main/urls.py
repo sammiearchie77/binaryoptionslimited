@@ -12,6 +12,7 @@ from .views import dashboard, id_verification, account_upgrade, create_profile,e
 # validation routes
 from .views import validate_login, validate_registration
 
+from . import views
 app_name = 'main'
 
 urlpatterns = [
@@ -21,9 +22,12 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('contact/', contact, name='contact'),
     # terms and conditions, Privacy policy
-    path('terms-and-conditions/', terms_and_condition, name='terms-and-conditions'),
+    path('terms-of-use/', terms_and_condition, name='terms-of-use'),
     path('privacy-policy', privacy_policy, name='privacy-policy'),
     path('safety-of-funds', safety_of_funds, name='safety-of-funds'),
+    path('company-infomation/', views.company_information, name='company-information' ), 
+    path('margin-information/', views.margin_information, name='margin-information' ), 
+
     # dashboard routes
     path('dashboard/', dashboard, name="dashboard"),
     path('fund-account/', fund_account, name='fund-account'), 

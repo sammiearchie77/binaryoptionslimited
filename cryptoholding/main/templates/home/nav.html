@@ -1,0 +1,38 @@
+{% block nav %}
+    
+    <!-- navigation section BEGIN  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              
+              <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'main:index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link text-light" href="{% url 'main:about' %}">About</a>
+              </li>
+              {% if request.user.is_authenticated %}
+              <li class="nav-item">
+                <a class="nav-link text-light" href="{% url 'main:dashboard' %}">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="{% url 'main:logout' %}">Logout</a>
+                  </li>
+                {% else %}  
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="{% url 'main:register' %}">Register</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="{% url 'login' %}">Login</a>
+                    </li>
+              {% endif %}
+              
+          </ul>
+        </div>
+      </nav>
+      <!-- navigation section END  -->
+{% endblock  %}

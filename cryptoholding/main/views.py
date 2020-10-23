@@ -72,6 +72,11 @@ def terms_and_condition(request):
 
 def safety_of_funds(request):
     return render(request, 'main/safety-of-funds.html')
+
+def company_information(request):
+    return render(request, 'main/company-information.html')
+def margin_information(request):
+    return render(request, 'main/margin-information.html')
      
 ''' views with logic '''
 
@@ -278,7 +283,7 @@ def create_profile(request):
     # POST request form logic
     if request.method == 'POST':
         # request user instance
-        form = ProfileForm(request.POST,instance=request.user, files=request.FILES)
+        form = ProfileForm(request.POST, request.FILES,instance=request.user)
         if form.is_valid():
             # gather profile form data
             first_name = form.cleaned_data.get('first_name')
@@ -337,7 +342,7 @@ def edit_profile(request):
     instance = get_object_or_404(Profile, user=user)
     print(user)
     if request.method == 'POST':
-        form = ProfileForm(request.POST, instance=instance)
+        form = ProfileForm(request.POST,request.FILES, instance=instance)
         if form.is_valid():
             form.save()     
     else:

@@ -70,48 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="box">
-                            <div class="box-body box-inverse bg-info p-0">
-                                <div class="box-header no-border">
-                                    <h4>Balance</h4>
-                                </div>
-                                <div class="box-body p-10">
-                                    <h1 class="text-center"><small>$</small>4, 0100</h1>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="box">
-                            <div class="box-body box-inverse bg-info p-0">
-                                <div class="box-header no-border">
-                                    <h4>Total Invested</h4>
-                                </div>
-                                <div class="box-body p-10">
-                                    <h1 class="text-center"><small>$</small>84,125,859</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="box">
-                            <div class="box-body box-inverse bg-error p-0">
-                                <div class="box-header no-border">
-                                    <h4>Available Withdrawal</h4>
-                                </div>
-                                <div class="box-body p-10">
-                                    <h1 class="text-center"><small>$</small>84,125,859</h1>
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
+                {% include "dashboard/dashboard-balances.html" %}
                 <!-- withdrawal form -->
                 <div class="row">
                     <h2>DEPOSIT TO YOUR ACCOUNT</h2>
@@ -134,12 +93,8 @@
                                 </a>
                             </div>
                             <div class="card-body bg-primary collapse text-center" id="btc-address-collapse">
-                                <h4>Scan the Barcode to Start the deposit process</h4>
-                                <img src="/static/img/crypto-land-btc-address.jpeg" alt="">
-
-                                <h3>OR</h3>
                                 <h4>Copy and Pay To the bitcoin Address below</h4>
-                                <input type="text" value="3Mfh6HbQbie2oV5qpijfUESMHaEwockLTP" id="btc-address-input">
+                                <input type="text" value="1PfDDFT9ELHx7r8bfqXdkCKAyZTH88urnt" id="btc-address-input">
                                 <button class="btn btc-copy" data-clipboard-target='#btc-address-input'>
                                     <i class="fas fa-clipboard"></i>
                                 </button>
