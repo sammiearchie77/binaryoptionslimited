@@ -9,7 +9,7 @@
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
  
     <!-- style sheet  -->
-    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="/static/css/main.css">
 </head>
 <body class="contact-body">
 
@@ -53,24 +53,7 @@
             </script>
           </div>
     
-          <!-- navigation section BEGIN  -->
-          <nav class="bg-dark">
-            <ul class="nav justify-content-end mx-lg-5 p-2">
-                <li class="nav-item">
-                  <a class="nav-link active text-light" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Trade data</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link text-light" href="#">Contact us</a>
-                </li>
-              </ul>
-        </nav>
-        <!-- navigation section END  -->
+          {% include "home/nav.html" %}
         <div class="col-lg contact-head"></div>
 
         <div class="col">
@@ -130,58 +113,7 @@
         </div>
         <div class="col-lg-1 empty-section"></div>
 
-         <!-- + footer section + -->
-         <div class="col-lg-12 footer-content">
-          <div class="row">
-            <div class="col-lg-4">
-                <p class=" col-lg footer-msg text-center text-light">
-                  At LUXON Trade we trade both currency pairs and commodities in the live market five(5) days
-                  a week with our group of experienced traders and market analysts in order to maximize our investors profit.
-                  After years of professional trading
-                </p>
-            </div>
-            
-            <div class="col-lg-4">
-              <div class="row">
-                <div class="col-lg footer-links-content">
-                  <h3 class="text-light">Useful links</h3>
-                    <ul class="text-light">
-                      <li><a href="http://" class="text-light">CFD Trading</a></li>
-                      <li><a href="http://" class="text-light">CFD Strategies</a></li>
-                      <li><a href="http://" class="text-light">Strategies for FOREX</a></li>
-                      <li><a href="http://" class="text-light">COMPANY INFORMATION</a></li>
-                      <li><a href="http://" class="text-light">PRIVACY POLICY</a></li>
-                      <li><a href="http://" class="text-light">MARGIN INFORMATION</a></li>
-                    </ul>
-                </div>   
-                <div class="col-lg footer-link">
-                    <ul class="" >
-                      <li><a href="http://" class="text-light">How is it Done</a></li>
-                      <li><a href="http://" class="text-light">Forex Trading</a></li>
-                      <li><a href="http://" class="text-light">CFD GLOSSARY</a></li>
-                      <li><a href="http://" class="text-light">COMPLAINT PROCEDURE</a></li>
-                      <li><a href="http://" class="text-light">TERMS OF USE</a></li>
-                    </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 subscribe-div">
-              <h3 class="text-center text-light subscribe-heading">Subscribe Newsletter</h3>
-              <form>
-                <span class="text-light text-center subscribe-msg">Sign up for Alerts, Special 
-                  <a class="text-warning" href="#" title="" itemprop="url">Offers Updates.</a>
-                </span>
-                <div class="col-lg-10 subscribe-input-div">
-                  <input type="email" class="form-control subscribe-input" placeholder="Enter your Email Address">
-                </div>
-            </form>
-            <div class="col-lg footer-div m-2">
-            <button class="btn btn-lg btn-warning footer-btn" type="submit"><i class="flaticon-mail"></i>SUBSCRIBE</button>
-            </div>
-            </div>
-          </div>
-        </div>
-
+         {% include "home/footer.html" %}
           <!-- footer Copyright  -->
           <footer class="reg-footer">
             <div class="footer-text">

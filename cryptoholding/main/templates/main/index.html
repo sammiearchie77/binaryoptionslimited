@@ -145,10 +145,10 @@
                 </p>
                 <div class="row content-button">
                     <div class="mx-3 px-2">
-                        <a href="#" class="btn btn-lg btn-warning btn-learn">Learn more</a>
+                        <a href="{% url 'main:about' %}" class="btn btn-lg btn-warning btn-learn">Learn more</a>
                     </div>
                     <div class="mx-3 px-2">
-                        <a href="./registration.html" class="btn btn-lg btn-reg">Register</a>
+                        <a href="{% url 'main:register' %}" class="btn btn-lg btn-reg">Register</a>
                     </div>
                 </div>
             </div>
@@ -192,7 +192,8 @@
                   <h2 class="text-center">$ 100</h2>
                 </div>
                 <div class="price-button">
-                  <button type="submit" class="price-btn btn-warning">order</button>
+                  
+                  <a href="{% url 'main:register' %}" class="price-btn btn-warning">Order</a>
                 </div>
               </div>
             </div>
@@ -206,7 +207,8 @@
                   <h2 class="text-center">$ 300</h2>
                 </div>
                 <div class="price-button">
-                  <button type="submit" class="price-btn btn-warning">order</button>
+                  <a href="{% url 'main:register' %}" class="price-btn btn-warning">Order</a>
+                  
                 </div>
               </div>
             </div>
@@ -220,7 +222,7 @@
                   <h2 class="text-center">$ 500</h2>
                 </div>
                 <div class="price-button">
-                  <button type="submit" class="price-btn btn-warning">order</button>
+                  <a href="{% url 'main:register' %}" class="price-btn btn-warning">Order</a>
                 </div>
               </div>
             </div>
@@ -234,7 +236,8 @@
                   <h2 class="text-center">$ 1000</h2>
                 </div>
                 <div class="price-button">
-                  <button type="submit" class="price-btn btn-warning">order</button>
+                  <a href="{% url 'main:register' %}" class="price-btn btn-warning">Order</a>
+
                 </div>
               </div>
             </div>
@@ -486,5 +489,8 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">function add_chatinline(){var hccid=90785713;var nt=document.createElement("script");nt.async=true;nt.src="https://mylivechat.com/chatinline.aspx?hccid="+hccid;var ct=document.getElementsByTagName("script")[0];ct.parentNode.insertBefore(nt,ct);}
+      add_chatinline(); </script>
 </body>
 </html>
